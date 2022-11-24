@@ -10,6 +10,7 @@ public class item {
 
     public item(String category, String name, String brand, double price, int expDate, boolean status) {
         this.category = category;
+        this.name = name;
         this.brand = brand;
         this.price = price;
         this.expDate = expDate;

@@ -17,6 +17,7 @@ public class client {
             int option;
             if (direction == 1) {
                 temp = addProduct();
+                //System.out.println(temp);
                 Products.add(temp);
                 option = repeat();
                 if (option == 1)
