@@ -16,8 +16,7 @@ public class search {
             String term = input.next();
             for (int i = 0; i < Products.size(); i++) {
                 if (term.toLowerCase().equals(Products.get(i).getName().toLowerCase())) {
-                    info = Products.get(i).toString();
-                    System.out.println(Products.get(i).toString()); // changes info from no product found to information of product
+                    info = Products.get(i).toString(); // changes info from no product found to information of product
                 }
             }
             System.out.println(info);
