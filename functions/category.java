@@ -11,7 +11,8 @@ public class category {
         ArrayList<String> category = new ArrayList<String>(); // New array to store the different categories
         for (int i = 0; i < Products.size(); i++) {
             String selectedItem = Products.get(i).getCategory();
-            if (!category.contains(selectedItem)) { // checks if category is already in list, so there are no repeats
+            boolean containStr = category.stream().anyMatch(selectedItem::equalsIgnoreCase);
+            if (!containStr) { // checks if category is already in list, so there are no repeats
                 category.add(selectedItem);
             }
         }
