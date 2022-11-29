@@ -84,7 +84,7 @@ public class add {
             }
             
             boolean _status = status == 'T'? true:false; // changes the string option T/F to a boolean
-            item Product = new item(category, name, brand, price, expDate, _status); // makes new item
+            item Product = new item(category.toString(), name.toString(), brand.toString(), String.valueOf(price), String.valueOf(expDate), String.valueOf(_status)); // makes new item (changes everything to string)
             Products.add(Product); // puts into already existing product list
             System.out.println("\nWant to add another product? (Y/N): ");
             char code = sc.next().charAt(0);

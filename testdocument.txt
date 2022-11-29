@@ -1,0 +1,5 @@
+Fruits,Apple,Red,2.99,44,true
+Diary,Milk,Whole,3.05,30,true
+Diary,Cheese,Swiss,2.50,12,false
+Fruits,Grape,Concord,3.49,14,true
+Vegetable,Tomato,Compari,4.00,30,false

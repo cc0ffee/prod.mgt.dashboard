@@ -4,11 +4,11 @@ public class item {
     private String category;
     private String name;
     private String brand;
-    private double price;
-    private int expDate;
-    private boolean status;
+    private String price;
+    private String expDate;
+    private String status;
 
-    public item(String category, String name, String brand, double price, int expDate, boolean status) {
+    public item(String category, String name, String brand, String price, String expDate, String status) {
         this.category = category;
         this.name = name;
         this.brand = brand;
@@ -29,19 +29,19 @@ public class item {
         return brand;
     }
 
-    public double getPrice() {
+    public String getPrice() {
         return price;
     }
 
-    public int getExpDate() {
+    public String getExpDate() {
         return expDate;
     }
 
-    public boolean getStatus() {
+    public String getStatus() {
         return status;
     }
 
     public String toString() {
-        return "Category: "+category+ "\nName: "+name+ "\nBrand: "+brand + "\nPrice: $"+ String.format("%.2f", price) +"\nExpiration Date: "+ expDate +" days" + "\nStatus: "+ (status? "In-store":"Sold out");
+        return "Category: "+category+ "\nName: "+name+ "\nBrand: "+brand + "\nPrice: $"+ String.format("%.2f", Float.parseFloat(price)) +"\nExpiration Date: "+ expDate +" days" + "\nStatus: "+ (Boolean.parseBoolean(status)? "In-store":"Sold out");
     }
 }
