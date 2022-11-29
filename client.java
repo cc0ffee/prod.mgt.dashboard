@@ -33,7 +33,6 @@ public class client {
             switch(direction) { // based on direction, choose which case to execute
                 case 1:
                 Products = add.addProduct(Products);
-                System.out.println(Products.get(0).getName());
                 break; // breaks will return to the start of the while loop, which is the main menu
                 case 2: 
                 search.searchProduct(Products);
