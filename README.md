@@ -1,4 +1,4 @@
-CS201 Term Project, by Kacper Stasik and Zibin Chen
+CS201 Term Project, by Kacper Stasik(A20510470) and Zibin Chen(A20507621)
 # Product Management System
 __State-of-the-art CLI to keep track of all products in a store!__
 
